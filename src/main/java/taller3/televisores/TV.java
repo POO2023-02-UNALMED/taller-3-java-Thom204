@@ -5,7 +5,7 @@ public class TV {
     private int canal = 1;
     private int precio = 500;
     private boolean estado;
-    private int volumen = 1;
+    private int volumen = 0;
     private static int numTV=0;
 
     Control control;
@@ -50,7 +50,7 @@ public class TV {
     }
     public void setVolumen(int volumen){
         if (this.estado){
-            if (volumen<7 && volumen>0){
+            if (volumen<=7 && volumen>0){
                 this.volumen=volumen;
             }
         }
