@@ -70,22 +70,22 @@ public class TV {
         }
     }
     public void canalUp(){
-        if (this.estado && this.canal<=120){
+        if (this.estado && this.canal<120){
             this.canal++;
         }
     }
     public void canalDown(){
-        if(this.estado && this.canal>0) {
+        if(this.estado && this.canal>1) {
             this.canal--;
         }
     }
     public void volumenUp(){
-        if (this.estado && this.volumen<=7){
+        if (this.estado && this.volumen<7){
             this.volumen++;
         }
     }
     public void volumenDown(){
-        if (this.estado && this.volumen>0){
+        if (this.estado && this.volumen>1){
             this.volumen--;
         }
     }
